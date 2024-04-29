@@ -418,9 +418,9 @@ Partial Class Form1
         'Counter
         '
         Me.Counter.BackColor = System.Drawing.Color.Blue
-        Me.Counter.Location = New System.Drawing.Point(695, 248)
+        Me.Counter.Location = New System.Drawing.Point(699, 253)
         Me.Counter.Name = "Counter"
-        Me.Counter.Size = New System.Drawing.Size(80, 80)
+        Me.Counter.Size = New System.Drawing.Size(75, 75)
         Me.Counter.TabIndex = 43
         Me.Counter.TabStop = False
         '
