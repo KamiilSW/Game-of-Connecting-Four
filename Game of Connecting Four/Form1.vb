@@ -242,4 +242,189 @@
         End If
 
     End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        If Button6.BackColor = Color.Red Or Button6.BackColor = Color.Blue Then
+            Exit Sub
+        ElseIf Button9.BackColor = Color.Red Or Button9.BackColor = Color.Blue Then
+            limit = 29
+        ElseIf Button16.BackColor = Color.Red Or Button16.BackColor = Color.Blue Then
+            limit = 115
+        ElseIf Button23.BackColor = Color.Red Or Button23.BackColor = Color.Blue Then
+            limit = 201
+        ElseIf Button30.BackColor = Color.Red Or Button30.BackColor = Color.Blue Then
+            limit = 287
+        ElseIf Button37.BackColor = Color.Red Or Button37.BackColor = Color.Blue Then
+            limit = 373
+        Else
+            limit = 458
+        End If
+
+        Counter.Location = New Point(489, 29)
+        y = Counter.Location.Y
+
+        Do
+            Counter.Top += 3
+            System.Threading.Thread.Sleep(7)
+            If limit = 29 Then
+                Button6.BackColor = Counter.BackColor
+            ElseIf limit = 115 Then
+                Button9.BackColor = Counter.BackColor
+            ElseIf limit = 201 Then
+                Button16.BackColor = Counter.BackColor
+            ElseIf limit = 287 Then
+                Button23.BackColor = Counter.BackColor
+            ElseIf limit = 373 Then
+                Button30.BackColor = Counter.BackColor
+            ElseIf limit = 458 Then
+                Button37.BackColor = Counter.BackColor
+            End If
+        Loop Until Counter.Location.Y >= limit
+
+        Counter.Location = New Point(695, 248)
+
+        If Counter.BackColor = Color.Red Then
+            Counter.BackColor = Color.Blue
+        Else
+            Counter.BackColor = Color.Red
+        End If
+
+    End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        If Button7.BackColor = Color.Red Or Button7.BackColor = Color.Blue Then
+            Exit Sub
+        ElseIf Button8.BackColor = Color.Red Or Button8.BackColor = Color.Blue Then
+            limit = 29
+        ElseIf Button15.BackColor = Color.Red Or Button15.BackColor = Color.Blue Then
+            limit = 115
+        ElseIf Button22.BackColor = Color.Red Or Button22.BackColor = Color.Blue Then
+            limit = 201
+        ElseIf Button29.BackColor = Color.Red Or Button29.BackColor = Color.Blue Then
+            limit = 287
+        ElseIf Button36.BackColor = Color.Red Or Button36.BackColor = Color.Blue Then
+            limit = 373
+        Else
+            limit = 458
+        End If
+
+        Counter.Location = New Point(575, 29)
+        y = Counter.Location.Y
+
+        Do
+            Counter.Top += 3
+            System.Threading.Thread.Sleep(7)
+            If limit = 29 Then
+                Button7.BackColor = Counter.BackColor
+            ElseIf limit = 115 Then
+                Button8.BackColor = Counter.BackColor
+            ElseIf limit = 201 Then
+                Button15.BackColor = Counter.BackColor
+            ElseIf limit = 287 Then
+                Button22.BackColor = Counter.BackColor
+            ElseIf limit = 373 Then
+                Button29.BackColor = Counter.BackColor
+            ElseIf limit = 458 Then
+                Button36.BackColor = Counter.BackColor
+            End If
+        Loop Until Counter.Location.Y >= limit
+
+        Counter.Location = New Point(695, 248)
+
+        If Counter.BackColor = Color.Red Then
+            Counter.BackColor = Color.Blue
+        Else
+            Counter.BackColor = Color.Red
+        End If
+
+    End Sub
+
+    Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim CountersPlaced(41) As String
+        If Button1.BackColor = Color.Red Then
+            CountersPlaced(0) = "R"
+        ElseIf Button2.BackColor = Color.Red Then
+            CountersPlaced(1) = "R"
+        ElseIf Button3.BackColor = Color.Red Then
+            CountersPlaced(2) = "R"
+        ElseIf Button4.BackColor = Color.Red Then
+            CountersPlaced(3) = "R"
+        ElseIf Button5.BackColor = Color.Red Then
+            CountersPlaced(4) = "R"
+        ElseIf Button6.BackColor = Color.Red Then
+            CountersPlaced(5) = "R"
+        ElseIf Button7.BackColor = Color.Red Then
+            CountersPlaced(6) = "R"
+        ElseIf Button8.BackColor = Color.Red Then
+            CountersPlaced(7) = "R"
+        ElseIf Button9.BackColor = Color.Red Then
+            CountersPlaced(8) = "R"
+        ElseIf Button10.BackColor = Color.Red Then
+            CountersPlaced(9) = "R"
+        ElseIf Button11.BackColor = Color.Red Then
+            CountersPlaced(10) = "R"
+        ElseIf Button12.BackColor = Color.Red Then
+            CountersPlaced(11) = "R"
+        ElseIf Button13.BackColor = Color.Red Then
+            CountersPlaced(12) = "R"
+        ElseIf Button14.BackColor = Color.Red Then
+            CountersPlaced(13) = "R"
+        ElseIf Button15.BackColor = Color.Red Then
+            CountersPlaced(14) = "R"
+        ElseIf Button16.BackColor = Color.Red Then
+            CountersPlaced(15) = "R"
+        ElseIf Button17.BackColor = Color.Red Then
+            CountersPlaced(16) = "R"
+        ElseIf Button18.BackColor = Color.Red Then
+            CountersPlaced(17) = "R"
+        ElseIf Button19.BackColor = Color.Red Then
+            CountersPlaced(18) = "R"
+        ElseIf Button20.BackColor = Color.Red Then
+            CountersPlaced(19) = "R"
+        ElseIf Button21.BackColor = Color.Red Then
+            CountersPlaced(20) = "R"
+        ElseIf Button22.BackColor = Color.Red Then
+            CountersPlaced(21) = "R"
+        ElseIf Button23.BackColor = Color.Red Then
+            CountersPlaced(22) = "R"
+        ElseIf Button24.BackColor = Color.Red Then
+            CountersPlaced(23) = "R"
+        ElseIf Button25.BackColor = Color.Red Then
+            CountersPlaced(24) = "R"
+        ElseIf Button26.BackColor = Color.Red Then
+            CountersPlaced(25) = "R"
+        ElseIf Button27.BackColor = Color.Red Then
+            CountersPlaced(26) = "R"
+        ElseIf Button28.BackColor = Color.Red Then
+            CountersPlaced(27) = "R"
+        ElseIf Button29.BackColor = Color.Red Then
+            CountersPlaced(28) = "R"
+        ElseIf Button30.BackColor = Color.Red Then
+            CountersPlaced(29) = "R"
+        ElseIf Button31.BackColor = Color.Red Then
+            CountersPlaced(30) = "R"
+        ElseIf Button32.BackColor = Color.Red Then
+            CountersPlaced(31) = "R"
+        ElseIf Button33.BackColor = Color.Red Then
+            CountersPlaced(32) = "R"
+        ElseIf Button34.BackColor = Color.Red Then
+            CountersPlaced(33) = "R"
+        ElseIf Button35.BackColor = Color.Red Then
+            CountersPlaced(34) = "R"
+        ElseIf Button36.BackColor = Color.Red Then
+            CountersPlaced(35) = "R"
+        ElseIf Button37.BackColor = Color.Red Then
+            CountersPlaced(36) = "R"
+        ElseIf Button38.BackColor = Color.Red Then
+            CountersPlaced(37) = "R"
+        ElseIf Button39.BackColor = Color.Red Then
+            CountersPlaced(38) = "R"
+        ElseIf Button40.BackColor = Color.Red Then
+            CountersPlaced(39) = "R"
+        ElseIf Button41.BackColor = Color.Red Then
+            CountersPlaced(40) = "R"
+        ElseIf Button42.BackColor = Color.Red Then
+            CountersPlaced(41) = "R"
+        End If
+    End Sub
 End Class
