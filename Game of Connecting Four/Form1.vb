@@ -1,6 +1,14 @@
 ﻿Public Class Form1
     Dim y As Integer
     Dim limit As Integer
+
+    Function MoveCounter()
+        For i = y To limit Step 3
+            y += 3
+            Counter.Location = New Point(59, y)
+            Return True
+        Next
+    End Function
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If Button1.BackColor = Color.Red Or Button1.BackColor = Color.Blue Then
             Exit Sub
@@ -21,24 +29,21 @@
         Counter.Location = New Point(59, 29)
         y = Counter.Location.Y
 
-        Do
-            y += 3
-            Counter.Location = New Point(59, y)
+        MoveCounter()
             System.Threading.Thread.Sleep(7)
-            If limit = 29 Then
-                Button1.BackColor = Counter.BackColor
-            ElseIf limit = 115 Then
-                Button14.BackColor = Counter.BackColor
-            ElseIf limit = 201 Then
-                Button21.BackColor = Counter.BackColor
-            ElseIf limit = 287 Then
-                Button28.BackColor = Counter.BackColor
-            ElseIf limit = 373 Then
-                Button35.BackColor = Counter.BackColor
-            ElseIf limit = 458 Then
-                Button42.BackColor = Counter.BackColor
-            End If
-        Loop Until Counter.Location.Y >= limit
+        If limit = 29 Then
+            Button1.BackColor = Counter.BackColor
+        ElseIf limit = 115 Then
+            Button14.BackColor = Counter.BackColor
+        ElseIf limit = 201 Then
+            Button21.BackColor = Counter.BackColor
+        ElseIf limit = 287 Then
+            Button28.BackColor = Counter.BackColor
+        ElseIf limit = 373 Then
+            Button35.BackColor = Counter.BackColor
+        ElseIf limit = 458 Then
+            Button42.BackColor = Counter.BackColor
+        End If
 
         Counter.Location = New Point(695, 248)
 
