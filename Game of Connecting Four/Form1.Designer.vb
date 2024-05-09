@@ -66,8 +66,12 @@ Partial Class Form1
         Me.Button42 = New System.Windows.Forms.Button()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Counter = New System.Windows.Forms.PictureBox()
+        Me.PictureBox2 = New System.Windows.Forms.PictureBox()
+        Me.AiButton = New System.Windows.Forms.Button()
+        Me.OnevOneButton = New System.Windows.Forms.Button()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.Counter, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Button1
@@ -424,11 +428,45 @@ Partial Class Form1
         Me.Counter.TabIndex = 43
         Me.Counter.TabStop = False
         '
+        'PictureBox2
+        '
+        Me.PictureBox2.BackColor = System.Drawing.Color.DimGray
+        Me.PictureBox2.Location = New System.Drawing.Point(2, -2)
+        Me.PictureBox2.Name = "PictureBox2"
+        Me.PictureBox2.Size = New System.Drawing.Size(801, 586)
+        Me.PictureBox2.TabIndex = 44
+        Me.PictureBox2.TabStop = False
+        '
+        'AiButton
+        '
+        Me.AiButton.BackColor = System.Drawing.Color.Gray
+        Me.AiButton.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.AiButton.Location = New System.Drawing.Point(315, 205)
+        Me.AiButton.Name = "AiButton"
+        Me.AiButton.Size = New System.Drawing.Size(166, 68)
+        Me.AiButton.TabIndex = 45
+        Me.AiButton.Text = "Play Against AI"
+        Me.AiButton.UseVisualStyleBackColor = False
+        '
+        'OnevOneButton
+        '
+        Me.OnevOneButton.BackColor = System.Drawing.Color.Gray
+        Me.OnevOneButton.ForeColor = System.Drawing.SystemColors.ActiveCaption
+        Me.OnevOneButton.Location = New System.Drawing.Point(315, 279)
+        Me.OnevOneButton.Name = "OnevOneButton"
+        Me.OnevOneButton.Size = New System.Drawing.Size(166, 68)
+        Me.OnevOneButton.TabIndex = 46
+        Me.OnevOneButton.Text = "Play against friend"
+        Me.OnevOneButton.UseVisualStyleBackColor = False
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(7.0!, 15.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 582)
+        Me.Controls.Add(Me.OnevOneButton)
+        Me.Controls.Add(Me.AiButton)
+        Me.Controls.Add(Me.PictureBox2)
         Me.Controls.Add(Me.Counter)
         Me.Controls.Add(Me.Button36)
         Me.Controls.Add(Me.Button37)
@@ -477,6 +515,7 @@ Partial Class Form1
         Me.Text = "Form1"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Counter, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.PictureBox2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
@@ -525,4 +564,7 @@ Partial Class Form1
     Friend WithEvents Button42 As Button
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Counter As PictureBox
+    Friend WithEvents PictureBox2 As PictureBox
+    Friend WithEvents AiButton As Button
+    Friend WithEvents OnevOneButton As Button
 End Class

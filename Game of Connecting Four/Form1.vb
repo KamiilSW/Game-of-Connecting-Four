@@ -2,12 +2,13 @@
     Dim y As Integer
     Dim limit As Integer
 
-    Function MoveCounter()
-        For i = y To limit Step 3
-            y += 3
-            Counter.Location = New Point(59, y)
-            Return True
-        Next
+    Function ChangeColours() As Boolean
+        If Counter.BackColor = Color.Red Then
+            Counter.BackColor = Color.Blue
+        Else
+            Counter.BackColor = Color.Red
+        End If
+        Return True
     End Function
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         If Button1.BackColor = Color.Red Or Button1.BackColor = Color.Blue Then
@@ -29,8 +30,6 @@
         Counter.Location = New Point(59, 29)
         y = Counter.Location.Y
 
-        MoveCounter()
-            System.Threading.Thread.Sleep(7)
         If limit = 29 Then
             Button1.BackColor = Counter.BackColor
         ElseIf limit = 115 Then
@@ -47,11 +46,7 @@
 
         Counter.Location = New Point(695, 248)
 
-            If Counter.BackColor = Color.Red Then
-                Counter.BackColor = Color.Blue
-            Else
-                Counter.BackColor = Color.Red
-            End If
+        ChangeColours()
 
     End Sub
 
@@ -75,32 +70,23 @@
         Counter.Location = New Point(145, 29)
         y = Counter.Location.Y
 
-        Do
-            y += 3
-            Counter.Location = New Point(145, y)
-            System.Threading.Thread.Sleep(7)
-            If limit = 29 Then
-                Button2.BackColor = Counter.BackColor
-            ElseIf limit = 115 Then
-                Button13.BackColor = Counter.BackColor
-            ElseIf limit = 201 Then
-                Button20.BackColor = Counter.BackColor
-            ElseIf limit = 287 Then
-                Button27.BackColor = Counter.BackColor
-            ElseIf limit = 373 Then
-                Button34.BackColor = Counter.BackColor
-            ElseIf limit = 458 Then
-                Button41.BackColor = Counter.BackColor
-            End If
-        Loop Until Counter.Location.Y >= limit
+        If limit = 29 Then
+            Button2.BackColor = Counter.BackColor
+        ElseIf limit = 115 Then
+            Button13.BackColor = Counter.BackColor
+        ElseIf limit = 201 Then
+            Button20.BackColor = Counter.BackColor
+        ElseIf limit = 287 Then
+            Button27.BackColor = Counter.BackColor
+        ElseIf limit = 373 Then
+            Button34.BackColor = Counter.BackColor
+        ElseIf limit = 458 Then
+            Button41.BackColor = Counter.BackColor
+        End If
 
         Counter.Location = New Point(695, 248)
 
-        If Counter.BackColor = Color.Red Then
-            Counter.BackColor = Color.Blue
-        Else
-            Counter.BackColor = Color.Red
-        End If
+        ChangeColours()
 
     End Sub
 
@@ -124,31 +110,23 @@
         Counter.Location = New Point(231, 29)
         y = Counter.Location.Y
 
-        Do
-            Counter.Top += 3
-            System.Threading.Thread.Sleep(7)
-            If limit = 29 Then
-                Button3.BackColor = Counter.BackColor
-            ElseIf limit = 115 Then
-                Button12.BackColor = Counter.BackColor
-            ElseIf limit = 201 Then
-                Button19.BackColor = Counter.BackColor
-            ElseIf limit = 287 Then
-                Button26.BackColor = Counter.BackColor
-            ElseIf limit = 373 Then
-                Button33.BackColor = Counter.BackColor
-            ElseIf limit = 458 Then
-                Button40.BackColor = Counter.BackColor
-            End If
-        Loop Until Counter.Location.Y >= limit
+        If limit = 29 Then
+            Button3.BackColor = Counter.BackColor
+        ElseIf limit = 115 Then
+            Button12.BackColor = Counter.BackColor
+        ElseIf limit = 201 Then
+            Button19.BackColor = Counter.BackColor
+        ElseIf limit = 287 Then
+            Button26.BackColor = Counter.BackColor
+        ElseIf limit = 373 Then
+            Button33.BackColor = Counter.BackColor
+        ElseIf limit = 458 Then
+            Button40.BackColor = Counter.BackColor
+        End If
 
         Counter.Location = New Point(695, 248)
 
-        If Counter.BackColor = Color.Red Then
-            Counter.BackColor = Color.Blue
-        Else
-            Counter.BackColor = Color.Red
-        End If
+        ChangeColours()
 
     End Sub
 
@@ -172,31 +150,23 @@
         Counter.Location = New Point(317, 29)
         y = Counter.Location.Y
 
-        Do
-            Counter.Top += 3
-            System.Threading.Thread.Sleep(7)
-            If limit = 29 Then
-                Button4.BackColor = Counter.BackColor
-            ElseIf limit = 115 Then
-                Button11.BackColor = Counter.BackColor
-            ElseIf limit = 201 Then
-                Button18.BackColor = Counter.BackColor
-            ElseIf limit = 287 Then
-                Button25.BackColor = Counter.BackColor
-            ElseIf limit = 373 Then
-                Button32.BackColor = Counter.BackColor
-            ElseIf limit = 458 Then
-                Button39.BackColor = Counter.BackColor
-            End If
-        Loop Until Counter.Location.Y >= limit
+        If limit = 29 Then
+            Button4.BackColor = Counter.BackColor
+        ElseIf limit = 115 Then
+            Button11.BackColor = Counter.BackColor
+        ElseIf limit = 201 Then
+            Button18.BackColor = Counter.BackColor
+        ElseIf limit = 287 Then
+            Button25.BackColor = Counter.BackColor
+        ElseIf limit = 373 Then
+            Button32.BackColor = Counter.BackColor
+        ElseIf limit = 458 Then
+            Button39.BackColor = Counter.BackColor
+        End If
 
         Counter.Location = New Point(695, 248)
 
-        If Counter.BackColor = Color.Red Then
-            Counter.BackColor = Color.Blue
-        Else
-            Counter.BackColor = Color.Red
-        End If
+        ChangeColours()
 
     End Sub
 
@@ -220,31 +190,23 @@
         Counter.Location = New Point(403, 29)
         y = Counter.Location.Y
 
-        Do
-            Counter.Top += 3
-            System.Threading.Thread.Sleep(7)
-            If limit = 29 Then
-                Button5.BackColor = Counter.BackColor
-            ElseIf limit = 115 Then
-                Button10.BackColor = Counter.BackColor
-            ElseIf limit = 201 Then
-                Button17.BackColor = Counter.BackColor
-            ElseIf limit = 287 Then
-                Button24.BackColor = Counter.BackColor
-            ElseIf limit = 373 Then
-                Button31.BackColor = Counter.BackColor
-            ElseIf limit = 458 Then
-                Button38.BackColor = Counter.BackColor
-            End If
-        Loop Until Counter.Location.Y >= limit
+        If limit = 29 Then
+            Button5.BackColor = Counter.BackColor
+        ElseIf limit = 115 Then
+            Button10.BackColor = Counter.BackColor
+        ElseIf limit = 201 Then
+            Button17.BackColor = Counter.BackColor
+        ElseIf limit = 287 Then
+            Button24.BackColor = Counter.BackColor
+        ElseIf limit = 373 Then
+            Button31.BackColor = Counter.BackColor
+        ElseIf limit = 458 Then
+            Button38.BackColor = Counter.BackColor
+        End If
 
         Counter.Location = New Point(695, 248)
 
-        If Counter.BackColor = Color.Red Then
-            Counter.BackColor = Color.Blue
-        Else
-            Counter.BackColor = Color.Red
-        End If
+        ChangeColours()
 
     End Sub
 
@@ -268,10 +230,7 @@
         Counter.Location = New Point(489, 29)
         y = Counter.Location.Y
 
-        Do
-            Counter.Top += 3
-            System.Threading.Thread.Sleep(7)
-            If limit = 29 Then
+        If limit = 29 Then
                 Button6.BackColor = Counter.BackColor
             ElseIf limit = 115 Then
                 Button9.BackColor = Counter.BackColor
@@ -284,15 +243,10 @@
             ElseIf limit = 458 Then
                 Button37.BackColor = Counter.BackColor
             End If
-        Loop Until Counter.Location.Y >= limit
 
-        Counter.Location = New Point(695, 248)
+            Counter.Location = New Point(695, 248)
 
-        If Counter.BackColor = Color.Red Then
-            Counter.BackColor = Color.Blue
-        Else
-            Counter.BackColor = Color.Red
-        End If
+        ChangeColours()
 
     End Sub
 
@@ -316,31 +270,23 @@
         Counter.Location = New Point(575, 29)
         y = Counter.Location.Y
 
-        Do
-            Counter.Top += 3
-            System.Threading.Thread.Sleep(7)
-            If limit = 29 Then
-                Button7.BackColor = Counter.BackColor
-            ElseIf limit = 115 Then
-                Button8.BackColor = Counter.BackColor
-            ElseIf limit = 201 Then
-                Button15.BackColor = Counter.BackColor
-            ElseIf limit = 287 Then
-                Button22.BackColor = Counter.BackColor
-            ElseIf limit = 373 Then
-                Button29.BackColor = Counter.BackColor
-            ElseIf limit = 458 Then
-                Button36.BackColor = Counter.BackColor
-            End If
-        Loop Until Counter.Location.Y >= limit
+        If limit = 29 Then
+            Button7.BackColor = Counter.BackColor
+        ElseIf limit = 115 Then
+            Button8.BackColor = Counter.BackColor
+        ElseIf limit = 201 Then
+            Button15.BackColor = Counter.BackColor
+        ElseIf limit = 287 Then
+            Button22.BackColor = Counter.BackColor
+        ElseIf limit = 373 Then
+            Button29.BackColor = Counter.BackColor
+        ElseIf limit = 458 Then
+            Button36.BackColor = Counter.BackColor
+        End If
 
         Counter.Location = New Point(695, 248)
 
-        If Counter.BackColor = Color.Red Then
-            Counter.BackColor = Color.Blue
-        Else
-            Counter.BackColor = Color.Red
-        End If
+        ChangeColours()
 
     End Sub
     Dim CountersPlaced(41) As String
@@ -516,4 +462,11 @@
         End If
         Return True
     End Function
+
+    Private Sub OnevOneButton_Click(sender As Object, e As EventArgs) Handles OnevOneButton.Click
+        OnevOneButton.Hide()
+        PictureBox2.Hide()
+        AiButton.Hide()
+
+    End Sub
 End Class
