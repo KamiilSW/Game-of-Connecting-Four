@@ -469,4 +469,11 @@
         AiButton.Hide()
 
     End Sub
+
+    Private Sub AiButton_Click(sender As Object, e As EventArgs) Handles AiButton.Click
+        OnevOneButton.Hide()
+        PictureBox2.Hide()
+        AiButton.Hide()
+
+    End Sub
 End Class
