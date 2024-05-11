@@ -231,20 +231,20 @@
         y = Counter.Location.Y
 
         If limit = 29 Then
-                Button6.BackColor = Counter.BackColor
-            ElseIf limit = 115 Then
-                Button9.BackColor = Counter.BackColor
-            ElseIf limit = 201 Then
-                Button16.BackColor = Counter.BackColor
-            ElseIf limit = 287 Then
-                Button23.BackColor = Counter.BackColor
-            ElseIf limit = 373 Then
-                Button30.BackColor = Counter.BackColor
-            ElseIf limit = 458 Then
-                Button37.BackColor = Counter.BackColor
-            End If
+            Button6.BackColor = Counter.BackColor
+        ElseIf limit = 115 Then
+            Button9.BackColor = Counter.BackColor
+        ElseIf limit = 201 Then
+            Button16.BackColor = Counter.BackColor
+        ElseIf limit = 287 Then
+            Button23.BackColor = Counter.BackColor
+        ElseIf limit = 373 Then
+            Button30.BackColor = Counter.BackColor
+        ElseIf limit = 458 Then
+            Button37.BackColor = Counter.BackColor
+        End If
 
-            Counter.Location = New Point(695, 248)
+        Counter.Location = New Point(695, 248)
 
         ChangeColours()
 
